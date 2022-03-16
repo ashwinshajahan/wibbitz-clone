@@ -1,0 +1,1784 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+del {
+  text-decoration: line-through;
+}
+body {
+  font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #000;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-weight: 500;
+}
+input,
+textarea,
+select {
+  font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: #000;
+}
+.thumb {
+  display: block;
+}
+.thumb img {
+  display: block;
+  width: 100%;
+}
+p {
+  line-height: 1.2em;
+  font-family: "GT-Eesti", Arial;
+  color: #000;
+  font-size: 23px;
+}
+.hidden {
+  display: none;
+}
+br.clear {
+  clear: both;
+  line-height: 0;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+::placeholder {
+  color: #9b9b9b;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9b9b9b;
+}
+
+::-ms-input-placeholder {
+  color: #9b9b9b;
+}
+
+#home {
+}
+#home section.wrapper {
+}
+#home section.wrapper header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 14px;
+  align-items: center;
+}
+header {
+}
+#home section.wrapper header h1 img {
+}
+#home section.wrapper div.middle {
+}
+#home section.wrapper div.middle ul {
+  display: flex;
+}
+#home section.wrapper div.middle ul li {
+  margin-right: 15px;
+  font-weight: 900;
+}
+#home section.wrapper div.middle ul li a {
+}
+#home section.wrapper div.right {
+}
+#home section.wrapper div.right ul {
+  display: flex;
+}
+#home section.wrapper div.right ul li {
+  margin-right: 14px;
+}
+#home section.wrapper div.right ul li a {
+  color: #ffe4da;
+}
+#home section.wrapper div.right ul li a.button {
+  font-size: 14px;
+  margin-bottom: 32px;
+  color: #ff8b64;
+  padding: 11px 7px;
+  border-radius: 4px;
+  font-weight: 700;
+  background-color: #ffe4da;
+}
+#spotlight {
+  display: flex;
+}
+
+#spotlight .wrapper {
+  display: flex;
+}
+
+#spotlight .wrapper .left {
+  padding-top: 1%;
+}
+
+#spotlight .wrapper .left h2 {
+  font-size: 40px;
+  font-weight: 700;
+  width: 59%;
+  margin-bottom: 33px;
+  padding-top: 62px;
+}
+
+#spotlight .wrapper .left p {
+  font-size: 16px;
+  width: 56%;
+  font-weight: 600;
+  padding-bottom: 9%;
+}
+
+#spotlight .wrapper .left form {
+  border: 1px solid #000;
+  display: inline-block;
+  width: 65%;
+  border-radius: 11px;
+  position: relative;
+}
+
+#spotlight .wrapper .left form input {
+  padding: 12px;
+}
+#spotlight .wrapper .left form input[type="email"] {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+}
+#spotlight .wrapper .left form input[type="submit"] {
+  background: #0056fb;
+  padding: 13px;
+  border-radius: 7px;
+  position: absolute;
+  right: -1px;
+  width: 31%;
+  top: -2px;
+}
+#spotlight section.wrapper div.right {
+  position: relative;
+}
+
+#spotlight .wrapper div.right .imgcontainer {
+  width: 104%;
+  padding-top: 16%;
+}
+
+#spotlight .wrapper div.right .imgcontainer img {
+  width: 100%;
+  display: block;
+}
+#spotlight .wrapper div.right div.play {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  z-index: 2;
+  background-color: #ff794b;
+  width: 51px;
+  padding: 16px;
+  border-radius: 50%;
+}
+#spotlight .wrapper div.right div.play img {
+  width: 100%;
+  display: block;
+  filter: invert(1);
+}
+#spotlight Section.wrapper div.right div.arrowimg {
+  width: 6%;
+  position: absolute;
+  top: 129px;
+  right: 373px;
+}
+#spotlight section.wrapper div.right div.arrowimg img {
+  width: 100%;
+  display: block;
+}
+#spotlight section.wrapper div.right div.round {
+  /* background-color: #ff794b;
+  width: 5%;
+  height: 18%;
+  border-radius: 50%;
+  position: absolute;
+  top: 94px;
+  right: 21%; */
+}
+#company {
+}
+#company section.wrapper {
+}
+#company section.wrapper h5 {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 9%;
+}
+#company section.wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 38px;
+}
+
+#company section.wrapper ul li {
+}
+#company section.wrapper ul li img {
+}
+#middle {
+}
+#middle .item {
+}
+#middle .item.bg {
+  background-color: #f8f8f8;
+}
+#middle .item .wrapper {
+}
+
+#middle .item .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 0;
+}
+
+#middle .item .wrapper .left {
+  width: 44%;
+}
+
+#middle .item .wrapper .left img {
+  width: 100%;
+  display: block;
+}
+
+#middle .item .wrapper .right {
+  width: 44%;
+}
+
+#middle .item .wrapper .right h1 {
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 21px;
+  width: 83%;
+}
+
+#middle .item .wrapper .right p {
+  font-size: 18px;
+  width: 79%;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+#middle .item .wrapper .right a {
+}
+
+#middle .item .wrapper .right .button {
+  font-size: 14px;
+  background: #0056fb;
+  padding: 13px;
+  border-radius: 7px;
+  width: 21%;
+  display: block;
+  margin-bottom: 35px;
+  color: #fff;
+}
+#middle .item .wrapper .right hr.line {
+  border-top: 1px dashed #888;
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+#middle .item .wrapper .right span {
+  font-size: 14px;
+  display: block;
+  width: 74%;
+  margin-bottom: 10px;
+  color: #939393;
+}
+
+#middle .item .wrapper .right small {
+}
+#middle .item .wrapper .right div.minimg {
+  margin-top: 3%;
+}
+#middle .item .wrapper .right div.minimg img {
+}
+#middle .item .wrapper .right span.icon {
+  background-color: #ff794b;
+  padding: 5px 5px;
+  width: 9%;
+  border-radius: 29%;
+}
+#middle .item .wrapper .right.bg span.icon {
+  background-color: #3dd278;
+  padding: 5px 5px;
+  width: 9%;
+  border-radius: 29%;
+}
+#middle .item .wrapper .right span.icon img {
+  width: 100%;
+  display: block;
+}
+#content {
+}
+#content section.wrapper {
+}
+#content section.wrapper {
+}
+#content section.wrapper h1 {
+  font-size: 32px;
+  font-weight: 600;
+  width: 31%;
+  margin-top: 4%;
+}
+#content section.wrapper ul {
+  display: flex;
+}
+#content section.wrapper ul li {
+  width: 33.3%;
+  position: relative;
+}
+#content section.wrapper ul li div.img1 {
+  width: 85%;
+}
+#content section.wrapper ul li div.img1 img {
+  width: 100%;
+  display: block;
+}
+#content section.wrapper ul li h3 {
+  font-size: 16px;
+  width: 86%;
+  font-weight: 600;
+  margin-top: 3%;
+}
+#content section.wrapper ul li div.imgplay {
+  width: 12%;
+  position: absolute;
+  z-index: 1;
+  top: 3%;
+  right: 68px;
+  padding: 17px;
+  background: #fff;
+  border-radius: 50%;
+}
+#content section.wrapper ul li div.imgplay img {
+  width: 100%;
+  display: block;
+}
+#content section.wrapper ul li div.icon1 {
+  width: 18%;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+  top: 219px;
+  left: 8px;
+  background-color: #fff;
+  border-radius: 11%;
+  padding: 1%;
+}
+
+#content section.wrapper ul li div.icon1 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#profile {
+  padding: 120px 0;
+}
+
+#profile section.wrapper {
+}
+
+#profile section.wrapper ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#profile section.wrapper ul li {
+  position: relative;
+  width: 45%;
+}
+
+#profile section.wrapper ul li div.imga {
+}
+
+#profile section.wrapper ul li div.imga img {
+  width: 100%;
+  display: block;
+}
+
+#profile section.wrapper ul li div.imgb {
+  position: absolute;
+  width: 23%;
+  height: 50px;
+  padding: 12px 24px;
+  bottom: 30%;
+  left: 5%;
+  bottom: 28%;
+}
+
+#profile section.wrapper ul li div.imgb img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  background: #fff;
+  padding: 12px;
+  border-radius: 4%;
+}
+
+#profile section.wrapper ul li p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 14px;
+  width: 85%;
+}
+
+#profile section.wrapper ul li h6 {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#profile section.wrapper ul li span {
+  display: block;
+  font-size: 13px;
+}
+#profile section.wrapper ul li small {
+  font-size: 13px;
+  font-weight: 600;
+}
+#marketing {
+  background: #f8f8f8;
+  padding: 91px 0px;
+}
+
+#marketing section.wrapper {
+}
+
+#marketing section.wrapper h1 {
+  font-size: 37px;
+  width: 50%;
+  text-align: center;
+  padding-top: 41px;
+  font-weight: 700;
+  margin: auto;
+}
+
+#marketing section.wrapper ul {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+#marketing section.wrapper ul li {
+  width: 33%;
+  padding-top: 3px;
+}
+#marketing section.wrapper ul li:nth-child(3n-1) {
+  border-left: 1px dashed #888;
+  border-right: 1px dashed #888;
+}
+
+#marketing section.wrapper ul li div.imgm {
+  width: 73%;
+  margin: 0 auto;
+}
+
+#marketing section.wrapper ul li div.imgm img {
+  width: 100%;
+  display: block;
+}
+
+#marketing section.wrapper ul li h2 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#marketing section.wrapper ul li p {
+  font-size: 14px;
+  width: 44%;
+  margin: auto;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 5px;
+}
+#marketing section.wrapper div.bluebg {
+  height: 10%;
+  width: 42%;
+  background-color: #d0dfff;
+  display: flex;
+  padding: 32px;
+  border-radius: 7px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10px;
+}
+#marketing section.wrapper div.bluebg h4 {
+  font-size: 14px;
+  font-weight: 600;
+  width: 69%;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+#marketing section.wrapper div.bluebg a.button {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 8px;
+  background-color: #0052cc;
+  width: 27%;
+  padding: 16px;
+  text-align: center;
+}
+#marketing section.wrapper div.bluebg div.star {
+  position: absolute;
+  top: -15%;
+  left: 74px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 33%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#marketing section.wrapper div.bluebg div.star img {
+  width: 100%;
+  display: block;
+}
+#solutions {
+  padding: 110px 0;
+}
+#solutions h1 {
+  font-size: 41px;
+  font-weight: 700;
+  width: 45%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+#solutions ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+#solutions ul li {
+}
+#solutions ul li.one {
+  width: 31%;
+  height: 635px;
+  background-color: #d0dfff;
+  border-radius: 8px;
+}
+#solutions ul li.two {
+  width: 31%;
+  background-color: #fef4d7;
+  height: 635px;
+  border-radius: 8px;
+}
+#solutions ul li.three {
+  width: 31%;
+  background-color: #ffe4da;
+  height: 634px;
+  border-radius: 8px;
+}
+#solutions ul li div.blue1 {
+  width: 16%;
+  margin: 0 auto;
+  margin-bottom: 7%;
+  margin-top: 34px;
+  padding: 16px 9px;
+  background-color: #ffff;
+  border-radius: 31%;
+}
+#solutions ul li div.blue1 img {
+  width: 100%;
+  display: block;
+}
+#solutions ul li h2 {
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 9%;
+}
+#solutions ul li p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
+#solutions ul li a.button {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 8px;
+  background-color: #0052cc;
+  width: 30%;
+  padding: 16px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+#solutions ul li.two a.button {
+  background: #ffc836;
+}
+#solutions ul li.three a.button {
+  background: #ff794b;
+}
+#solutions ul li div.blue2 {
+}
+#solutions ul li div.blue2 img {
+  width: 100%;
+  display: block;
+  margin-top: 40px;
+}
+#video {padding: 60px 0;}
+#video section.wrapper {
+}
+#video section.wrapper {
+}
+#video section.wrapper h1 {
+  font-size: 45px;
+  font-weight: 700;
+  width: 51%;
+}
+#video section.wrapper ul {
+  display: flex;
+  justify-content: space-between;
+}
+#video section.wrapper ul li {
+  width: 30%;
+}
+#video section.wrapper ul li div.imgv {
+  width: 100%;
+}
+#video section.wrapper ul li div.imgv img {
+  width: 100%;
+  display: block;
+}
+#video section.wrapper ul li h5 {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 14px;
+}
+#video section.wrapper ul li p {
+  margin-top: 13px;
+  font-size: 15px;
+  width: 95%;
+  font-weight: 600;
+}
+#video section.wrapper ul li h6 {
+  margin-top: 5%;
+}
+#video section.wrapper ul li h6 a {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: revert;
+}
+#video section.wrapper a {
+}
+#video section.wrapper a.button {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 8px;
+  background-color: #0052cc;
+  width: 24%;
+  padding: 16px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+#video section.wrapper ul li:first-child h5 {
+  color: #00f;
+}
+#help {
+  padding: 44px 0px;
+  background-color: #000;
+}
+#help section.wrapper {
+  background-color: #000000;
+  display: flex;
+}
+#help section.wrapper div.left {
+  background-color: #000000;
+  width: 48%;
+}
+#help div.left {
+  width: 48%;
+}
+#help section.wrapper div.left h1 {
+  font-size: 37px;
+  font-weight: 700;
+  width: 37%;
+  color: #fff;
+}
+#help section.wrapper div.left p {
+  font-size: 15px;
+  color: #888;
+  width: 75%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+#help section.wrapper div.left p a {
+  font-weight: 500;
+}
+#help section.wrapper div.left hr.line {
+  border-bottom: 1px dotted #fff;
+  width: 183px;
+}
+#help section.wrapper div.left h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 16px;
+}
+#help section.wrapper div.left blockquote {
+  font-size: 14px;
+  color: #fff;
+  width: 76%;
+  font-weight: 700;
+  margin-top: 20px;
+}
+#help section.wrapper div.left h6 {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 800;
+  margin-top: 26px;
+}
+#help section.wrapper div.left small {
+  font-size: 11px;
+  color: #fff;
+  font-weight: 400;
+}
+#help section.wrapper div.social {
+  display: flex;
+}
+#help section.wrapper div.social ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+  margin-bottom: 55px;
+}
+#help section.wrapper div.social ul li {
+  margin-right: 7px;
+}
+#help section.wrapper div.social ul li img {
+  width: 100%;
+  display: block;
+  border-radius: 35px;
+}
+#help section.wrapper div.social ul li.active {
+}
+#help section.wrapper div.social ul li.active img {
+  width: 100%;
+  display: block;
+}
+#help section.wrapper div.brand {
+  width: 72%;
+  margin-top: 80px;
+}
+#help section.wrapper div.brand ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#help section.wrapper div.brand ul li {
+  margin-right: 14px;
+}
+#help section.wrapper div.brand ul li div.imgb {
+}
+#help section.wrapper div.brand ul li div.imgb img {
+}
+#help div.right {
+  width: 48%;
+  background: #fff;
+  border-radius: 7px;
+  height: 509px;
+}
+#help div.right h1 {
+  font-size: 24px;
+  margin-top: 24px;
+  font-weight: 500;
+  margin-left: 18px;
+}
+#help div.right form {
+  padding: 20px;
+}
+#help div.right div.data {
+  width: 49%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px;
+  display: inline-block;
+  margin-top: 16px;
+}
+#help div.right form div.data input {
+  width: 100%;
+}
+#help div.right form div.check input[type="checkbox"] {
+  height: 25px;
+  width: 35px;
+  margin-right: 13px;
+}
+#help div.right form div.data select {
+  width: 100%;
+  color: #b7b6b1;
+}
+#help div.right form div.data select option {
+}
+#help div.right form div.check {
+  display: flex;
+  margin-top: 22px;
+  width: 84%;
+  margin-bottom: 30px;
+}
+#help div.right form div.check p {
+  font-size: 14px;
+}
+#help div.right a.button {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 8px;
+  background-color: #0052cc;
+  width: 78%;
+  padding: 16px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+footer {
+  /* display: flex; */
+  padding: 40px 0;
+}
+
+footer section.wrapper  {
+  
+}
+footer section.wrapper h3 {
+  display: none;
+  font-size: 21px;
+  width: 57%;
+  font-weight: 500;
+}
+footer section.wrapper section.faq {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section.wrapper div.left {
+  width: 34%;
+}
+
+footer section.wrapper section.faq div.left h3 {
+  font-size: 21px;
+  width: 57%;
+  font-weight: 500;
+  display: block;
+}
+
+footer section.wrapper div.left div.logos {
+  margin-top: 24px;
+}
+
+footer section.wrapper div.left div.logos ul {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  filter: grayscale(1);
+}
+
+footer section.wrapper div.left div.logos ul li {
+  padding: 8px;
+  background-color: #d3d3d3;
+  margin-right: 5px;
+  border-radius: 15px;
+  width: 49%;
+  display: flex;
+  align-items: center;
+}
+
+footer section.wrapper div.left div.logos ul li img {
+  display: block;
+  width: 100%;
+}
+
+footer section.wrapper div.left div.globe {
+  width: 83%;
+  display: flex;
+  margin-top: 31px;
+  margin-bottom: 11px;
+}
+
+footer section.wrapper div.left div.globe div.img_container {
+  width: 8%;
+  margin-right: 10px;
+}
+footer section.wrapper div.left div.globe div.img_container img {
+  width: 100%;
+  display: block;
+}
+
+footer section.wrapper div.left div.globe span {
+  width: 100%;
+  display: inline-block;
+}
+
+footer section.wrapper div.left span {
+  display: inline-block;
+}
+footer section.wrapper div.right {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 25px;
+}
+footer section.wrapper div.right div.item {
+  width: 24%;
+}
+footer section.wrapper div.right div.item h4 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+footer section.wrapper div.right div.item ul {
+  width: 100%;
+  
+}
+
+footer section.wrapper div.right div.item ul li {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+footer section.wrapper div.right div.item ul li img {
+  height: 20px;
+  width: 20px;
+}
+
+footer section.wrapper div.right span h5 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+@media all and (max-width: 1280px) {
+  #spotlight .wrapper div.right div.play {
+  }
+  #spotlight Section.wrapper div.right div.arrowimg {
+    width: 14%;
+    position: absolute;
+    top: 16%;
+    right: 55%;
+  }
+  #middle .item .wrapper .right .button {
+    width: 22%;
+  }
+}
+@media all and (max-width: 1180px) {
+  #spotlight .wrapper div.right div.play {
+  }
+  #spotlight Section.wrapper div.right div.arrowimg {
+  }
+  #middle .item .wrapper .right .button {
+    width: 24%;
+  }
+  #marketing section.wrapper div.bluebg a.button {
+    font-size: 13px;
+    width: 31%;
+    padding: 16px;
+  }
+  #solutions ul li a.button {
+    width: 37%;
+  }
+  #middle .item .wrapper .right .button {
+    padding: 14px;
+  }
+}
+
+@media all and (max-width: 1080px) {
+  #content section.wrapper ul li div.icon1 {
+    top: 180px;
+  }
+  #profile section.wrapper ul li div.imgb {
+    left: 4%;
+    bottom: 37%;
+  }
+  #middle .item .wrapper .right .button {
+    padding: 14px;
+    width: 28%;
+  }
+  #content section.wrapper ul li div.imgplay {
+    width: 15%;
+    top: 3%;
+    right: 56px;
+    border-radius: 58%;
+  }
+  #content section.wrapper ul li div.icon1 {
+    top: 160px;
+  }
+  #marketing section.wrapper div.bluebg {
+    width: 45%;
+  }
+  #marketing section.wrapper div.bluebg a.button {
+    font-size: 13px;
+    width: 33%;
+  }
+  #solutions ul li div.blue1 {
+    width: 19%;
+  }
+  #middle .item .wrapper .left {
+    width: 80%;
+  }
+  #middle .item .wrapper {
+    flex-wrap: wrap;
+  }
+  #middle .item .wrapper .right h1 {
+    font-size: 38px;
+    width: 100%;
+  }
+  #middle .item .wrapper .right span.icon {
+    width: 12%;
+  }
+  #middle .item .wrapper .right p {
+    font-size: 16px;
+    width: 97%;
+  }
+  #middle .item .wrapper .right span {
+    font-size: 15px;
+    width: 85%;
+  }
+  #middle .item .wrapper .right hr.line {
+    margin-bottom: 30px;
+  }
+}
+@media all and (max-width: 980px) {
+  #home section.wrapper div.middle {
+    display: none;
+  }
+  #spotlight .wrapper div.right div.play {
+    display: none;
+  }
+  #spotlight .wrapper div.right div.arrowimg {
+    display: none;
+  }
+  #spotlight .wrapper .left form input[type="submit"] {
+    width: 39%;
+    top: -1px;
+  }
+  #middle .item .wrapper .right .button {
+    padding: 14px;
+    width: 36%;
+  }
+  #content section.wrapper ul li div.img1 {
+    width: 93%;
+  }
+  #content section.wrapper ul li div.imgplay {
+    width: 18%;
+    right: 23px;
+  }
+  #content section.wrapper ul li div.icon1 {
+    top: 132px;
+    width: 27%;
+  }
+  #profile section.wrapper ul li div.imgb {
+    bottom: 45%;
+  }
+  #marketing section.wrapper ul li p {
+    font-size: 14px;
+    width: 65%;
+  }
+  #marketing section.wrapper h1 {
+    font-size: 37px;
+    width: 68%;
+  }
+  #marketing section.wrapper div.bluebg {
+    width: 57%;
+  }
+  #solutions h1 {
+    font-size: 39px;
+    width: 60%;
+  }
+  #solutions ul li p {
+    font-size: 13px;
+    width: 77%;
+  }
+  #solutions ul li a.button {
+    width: 51%;
+  }
+  #solutions ul li.one {
+    width: 31%;
+    height: 539px;
+  }
+  #solutions ul li.two {
+    width: 31%;
+    background-color: #fef4d7;
+    height: 539px;
+  }
+  #solutions ul li.three {
+    width: 31%;
+    height: 539px;
+  }
+  #content section.wrapper h1 {
+    font-size: 30px;
+    width: 45%;
+  }
+  #video section.wrapper h1 {
+    font-size: 35px;
+    width: 63%;
+  }
+  footer section.wrapper section.faq {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  footer section.wrapper section.faq div.left h3 {
+    display: none;
+  }
+  footer section.wrapper h3 {
+    display: block;
+    width: 68%;
+  }
+  footer section.wrapper div.left div.logos ul {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #spotlight .wrapper div.right div.play {
+    display: none;
+  }
+  #spotlight Section.wrapper div.right div.arrowimg {
+    display: none;
+  }
+  #spotlight .wrapper .left h2 {
+    font-size: 30px;
+  }
+  #spotlight .wrapper .left form {
+    width: 91%;
+  }
+  #company section.wrapper ul li img {
+    width: 100%;
+    display: block;
+    height: 20px;
+  }
+  #company section.wrapper ul {
+    flex-wrap: wrap;
+  }
+  #company section.wrapper ul li {
+    width: 21%;
+    padding-bottom: 10px;
+  }
+  #spotlight .wrapper .left h2 {
+    font-size: 28px;
+    width: 95%;
+  }
+  #spotlight .wrapper .left p {
+    font-size: 16px;
+    width: 87%;
+  }
+  #middle .item .wrapper .left {
+    width: 89%;
+    margin: 0 AUTO;
+  }
+  #middle .item .wrapper .right {
+    width: 100%;
+  }
+  #middle .item .wrapper {
+    flex-wrap: wrap;
+  }
+  #middle .item .wrapper .right p {
+    font-size: 17px;
+    width: 77%;
+  }
+  #middle .item .wrapper .right h1 {
+    font-size: 35px;
+  }
+  #middle .item .wrapper .right .button {
+    padding: 14px;
+    width: 18%;
+  }
+  #middle .item .wrapper .right span.icon {
+    width: 7%;
+  }
+  #middle .item .wrapper .right span {
+    font-size: 15px;
+  }
+  #profile {
+    padding: 100px 0;
+  }
+  #content section.wrapper h1 {
+    font-size: 27px;
+    width: 60%;
+  }
+  #content section.wrapper ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #content section.wrapper ul li {
+    width: 40%;
+  }
+  #content section.wrapper ul li h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  #profile section.wrapper ul li div.imgb {
+    bottom: 50%;
+  }
+  #marketing section.wrapper h1 {
+    font-size: 30px;
+    width: 80%;
+  }
+  #marketing section.wrapper ul li p {
+    font-size: 14px;
+    width: 94%;
+  }
+  #marketing section.wrapper div.bluebg {
+    width: 63%;
+    padding: 16px;
+  }
+  #solutions h1 {
+    font-size: 30px;
+    width: 75%;
+    margin-bottom: 15px;
+  }
+  #solutions ul li a.button {
+    width: 60%;
+    padding: 12px;
+  }
+  #solutions ul li.one {
+    height: 480px;
+  }
+  #solutions ul li.two {
+    height: 480px;
+  }
+  #solutions ul li.three {
+    height: 480px;
+  }
+  #video section.wrapper h1 {
+    font-size: 30px;
+    width: 68%;
+  }
+  #video section.wrapper a.button {
+    width: 27%;
+    margin-top: 15px;
+  }
+  #video section.wrapper ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #video section.wrapper ul li {
+    width: 40%;
+    margin-right: 20px;
+  }
+  #video section.wrapper ul li {
+    width: 41%;
+    margin: 0 auto;
+  }
+  #video section.wrapper ul li div.imgv {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #help section.wrapper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #help section.wrapper div.left {
+    width: 100%;
+  }
+  #help section.wrapper div.left h1 {
+    text-align: center;
+    font-size: 36px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #help section.wrapper div.left p {
+    text-align: center;
+    margin: 0 auto;
+  }
+  #help section.wrapper div.left hr.line {
+    width: 100%;
+  }
+  #help section.wrapper div.left h3 {
+    text-align: center;
+  }
+  #help section.wrapper div.left blockquote {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+  }
+  #help section.wrapper div.left h6 {
+    text-align: center;
+  }
+  #help section.wrapper div.left small {
+    display: block;
+    text-align: center;
+  }
+  #help section.wrapper div.social {
+    justify-content: center;
+  }
+  #help section.wrapper div.brand ul {
+    justify-content: center;
+  }
+  #help div.right {
+    width: 100%;
+  }
+  #help section.wrapper div.brand {
+    margin: 0 auto 30px;
+  }
+  #help div.right h1 {
+    text-align: center;
+  }
+  footer section.wrapper div.left div.logos ul {
+    width: 82%;
+  }
+  footer section.wrapper div.left div.globe span {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 640px) {
+  #spotlight .wrapper .left h2 {
+    font-size: 23px;
+  }
+  #spotlight .wrapper .left p {
+    font-size: 14px;
+  }
+  #spotlight .wrapper div.right .imgcontainer {
+    display: none;
+  }
+  #spotlight .wrapper .left p {
+    padding-bottom: 5%;
+  }
+  #spotlight .wrapper .left h2 {
+    margin-bottom: 18px;
+    padding-top: 50px;
+  }
+  #middle .item .wrapper {
+    padding: 60px 0;
+  }
+  #middle .item .wrapper .right h1 {
+    font-size: 24px;
+    width: 75%;
+  }
+  #middle .item .wrapper .right p {
+    font-size: 15px;
+    width: 85%;
+  }
+  #middle .item .wrapper .right .button {
+    width: 24%;
+  }
+  #middle .item .wrapper .right .button {
+    margin-bottom: 25px;
+  }
+  #content section.wrapper h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+  }
+  #content section.wrapper ul li div.img1 {
+    width: 100%;
+  }
+  #content section.wrapper ul li {
+    width: 65%
+  }
+  #content section.wrapper ul li div.icon1 {
+    top: 186px;
+  }
+  #content section.wrapper ul li div.imgplay {
+    width: 15%;
+    right: 10px;
+  }
+  #profile section.wrapper ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #profile section.wrapper ul li {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  #profile section.wrapper ul li div.imgb {
+    bottom: 41%;
+    left: 1%;
+  }
+  #marketing section.wrapper ul li {
+    width: 50%;
+  }
+  #marketing section.wrapper ul li:nth-child(3n-1) {
+    border: 0;
+  }
+  #marketing section.wrapper h1 {
+    font-size: 26px;
+  }
+  #marketing section.wrapper div.bluebg {
+    width: 80%;
+  }
+  #marketing section.wrapper div.bluebg a.button {
+    width: 36%;
+  }
+  #solutions h1 {
+    font-size: 25px;
+    width: 80%;
+  }
+  #solutions ul {
+    flex-wrap: wrap;
+  }
+  #solutions ul li.one {
+    width: 80%;
+    height: 580px;
+    margin-bottom: 70px;
+  }
+  #solutions ul li.two {
+    width: 80%;
+    height: 580px;
+    margin-bottom: 70px;
+  }
+  #solutions ul li.three {
+    width: 80%;
+    height: 580px;
+    margin-bottom: 50px;
+  }
+  #solutions ul li div.blue2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #solutions {
+    padding: 50px 0;
+  }
+  #video section.wrapper h1 {
+    font-size: 24px;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #video section.wrapper a.button {
+    width: 36%;
+  }
+  #help section.wrapper div.left h1 {
+    font-size: 30px;
+  }
+  #help section.wrapper div.left p {
+    font-size: 12px;
+    margin: 10px auto;
+  }
+  #help section.wrapper div.left blockquote {
+    font-size: 12px;
+  }
+  #help section.wrapper div.brand ul {
+    margin: 10px auto;
+  }
+  footer section.wrapper h3 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  a {
+    font-size: 14px;
+  }
+  footer section.wrapper div.right {
+    flex-wrap: wrap;
+  }
+  footer section.wrapper div.right div.item {
+    width: 50%;
+  }
+  footer section.wrapper div.left div.logos ul li {
+    padding: 5px;
+  }
+  footer section.wrapper div.left div.logos ul {
+    width: 95%;
+  }
+  footer section.wrapper div.left div.globe div.img_container {
+    width: 18%;
+  }
+  #solutions ul li a.button {
+    width: 35%;
+  }
+}
+@media all and (max-width: 480px) {
+  #spotlight .wrapper .left h2 {
+    width: 99%;
+    font-size: 20px;
+  }
+  #middle .item .wrapper .right p {
+    font-size: 14px;
+  }
+  #middle .item .wrapper .right .button {
+    width: 32%;
+  }
+  #middle .item .wrapper .right span {
+    font-size: 13px;
+    width: 95%;
+  }
+  #content section.wrapper ul li div.icon1 {
+    top: 168px;
+  }
+  #content section.wrapper ul li div.imgplay {
+    padding: 15px;
+    width: 17%;
+  }
+  #content section.wrapper h1 {
+    font-size: 23px;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  #profile {
+    padding: 60px 0;
+  }
+  #profile section.wrapper ul li div.imgb {
+    bottom: 46%;
+  }
+  #profile section.wrapper ul li p {
+    font-size: 14px;
+    width: 100%;
+  }
+  #marketing {
+    padding: 60px 0px;
+  }
+  #marketing section.wrapper h1 {
+    font-size: 24px;
+    width: 95%;
+  }
+  #marketing section.wrapper ul li p {
+    font-size: 12px;
+    padding: 10px;
+  }
+  #marketing section.wrapper div.bluebg {
+    width: 100%;
+  }
+  #marketing section.wrapper div.bluebg h4 {
+    font-size: 12px;
+  }
+  #video section.wrapper ul li p {
+    margin-top: 12px;
+    font-size: 13px;
+    width: 100%;
+  }
+  #video section.wrapper ul li {
+    width: 46%;
+  }
+  #video section.wrapper a.button {
+    width: 48%;
+  }
+  #help section.wrapper div.left h1 {
+    font-size: 25px;
+    width: 100%;
+  }
+  #help section.wrapper div.left p {
+    font-size: 12px;
+    width: 100%;
+  }
+  #help section.wrapper div.brand ul {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #help div.right form div.check p {
+    font-size: 14px;
+    width: 100%;
+  }
+  #help div.right form div.check input[type="checkbox"] {
+    height: 18px;
+  }
+  footer section.wrapper h3 {
+    width: 75%;
+    font-size: 18px;
+  }
+  footer section.wrapper div.left {
+    width: 45%;
+  }
+  #solutions ul li.one {
+    height: 520px;
+  }
+  footer section.wrapper div.left span {
+    display: inline-block;
+    font-size: 12px;
+  }
+  #solutions ul li.three {
+    height: 480px
+  }
+  #solutions ul li.two {
+    height: 540px;
+  }
+}
+@media all and (max-width: 360px) {
+  #home section.wrapper div.right {
+    display: none;
+  }
+  #spotlight .wrapper .left h2 {
+    font-size: 18px;
+  }
+  #spotlight .wrapper .left p {
+    font-size: 12px;
+  }
+  #spotlight .wrapper .left form {
+    width: 85%;
+  }
+  #company section.wrapper h5 {
+    font-size: 14px;
+    width: 100%;
+  }
+  #middle .item .wrapper .right span.icon {
+    width: 10%;
+  }
+  #middle .item .wrapper .right h1 {
+    font-size: 22px;
+    width: 77%;
+  }
+  #middle .item .wrapper .right h1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #middle .item .wrapper .right p {
+    width: 87%;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  #middle .item .wrapper .right .button {
+    width: 37%;
+    margin: 10px auto;
+  }
+  #middle .item .wrapper .right hr.line {
+    width: 100%;
+  }
+  #middle .item .wrapper .right span {
+    font-size: 12px;
+    text-align: center;
+  }
+  #middle .item .wrapper .right div.minimg {
+    text-align: center;
+    margin-top: 10px;
+  }
+  #content section.wrapper ul li div.icon1 {
+    top: 106px;
+  }
+  #marketing section.wrapper ul li {
+    width: 100%;
+  }
+  #content section.wrapper ul li div.icon1 {
+    top: 115px;
+  }
+  #content section.wrapper ul li div.imgplay {
+    width: 19%;
+  }
+  #content section.wrapper ul li h3 {
+    font-size: 13px;
+    width: 100%;
+  }
+  #profile section.wrapper ul li div.imgb {
+    bottom: 51%;
+  }
+  #marketing section.wrapper h1 {
+    padding-top: 0;
+  }
+  #marketing section.wrapper ul li p {
+    font-size: 11px;
+  }
+  #marketing section.wrapper ul li h2 {
+    font-size: 22px;
+  }
+  #solutions h1 {
+    font-size: 21px;
+    width: 100%;
+    padding-top: 0;
+  }
+  #solutions ul li a.button {
+    width: 42%;
+  }
+  #solutions ul li div.blue2 {
+    width: 100%;
+  }
+  #video section.wrapper a.button {
+    width: 54%;
+  }
+  #help div.right div.data {
+    width: 100%;
+  }
+  #help div.right h1 {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px auto;
+  }
+  #help div.right {
+    width: 100%;
+    height: 10%;
+  }
+  #help div.right form div.check p {
+    font-size: 12px;
+  }
+  footer section.wrapper h3 {
+    width: 100%;
+    font-size: 16px;
+  }
+  #video section.wrapper h1 {
+    font-size: 23px;
+    width: 91%;
+  }
+
+
+
+
+
+
+
+
+  
+
+
+
+
+}
+@media all and (max-width: 320px) {
+}
